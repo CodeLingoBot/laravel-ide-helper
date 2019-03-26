@@ -251,7 +251,7 @@ class Alias
         if (interface_exists($this->facade)) {
             $this->classType = 'interface';
             $this->extends = $this->facade;
-        } else {
+        } else{
             $this->classType = 'class';
             if (class_exists($this->facade)) {
                 $this->extends = $this->facade;

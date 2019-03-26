@@ -296,7 +296,7 @@ class ModelsCommand extends Command
 
             if (!isset($this->properties[$name])) {
                 continue;
-            } else {
+            } else{
                 $this->properties[$name]['type'] = $this->getTypeOverride($realType);
 
                 if (isset($this->nullableColumns[$name])) {
@@ -683,7 +683,7 @@ class ModelsCommand extends Command
             $contents = $this->files->get($filename);
             if ($originalDoc) {
                 $contents = str_replace($originalDoc, $docComment, $contents);
-            } else {
+            } else{
                 $needle = "class {$classname}";
                 $replace = "{$docComment}\nclass {$classname}";
                 $pos = strpos($contents, $needle);

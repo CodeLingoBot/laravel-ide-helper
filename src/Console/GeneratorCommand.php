@@ -82,7 +82,7 @@ class GeneratorCommand extends Command
             $this->error(
                 'Error generating IDE Helper: first delete your compiled file (php artisan clear-compiled)'
             );
-        } else {
+        } else{
             $filename = $this->argument('filename');
             $format = $this->option('format');
 
@@ -122,8 +122,7 @@ class GeneratorCommand extends Command
             } else {
                 $this->error("The helper file could not be created at $filename");
             }
-        }
-    }
+        }  }
 
     protected function useMemoryDriver()
     {
